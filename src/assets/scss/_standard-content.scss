@@ -1,0 +1,325 @@
+@import "standard";
+$fonsize-all: 16px;
+.standard-content {
+  font-size: $fonsize-all;
+  line-height: 24px;
+  h3, h4, h5, h6 {
+    margin: 0 0 10px;
+  }
+  h3 {
+    font-weight: 700;
+    margin: 35px 0 5px;
+    line-height: 40px;
+    @media screen and (max-width: $screen-xs) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 25px 0 5px;
+    }
+  }
+  h4 {
+    font-weight: 600;
+    padding: 12px 0 5px;
+    margin: 0;
+  }
+  hr {
+    margin: 0 0 15px;
+    border-top: 1px solid #d6dfe8;
+  }
+  p {
+    font-size: $fonsize-all;
+    margin: 0 0 20px;
+  }
+  input, select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  ol, ul {
+    font-size: $fonsize-all;
+    &.wrapped {
+      li {
+        font-weight: 600;
+        color: $text-color;
+        font-size: $fonsize-all;
+        span {
+          font-weight: 400;
+          color: $text-color;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  ol.wrapped {
+    li {
+      span {
+        margin-left: 3px;
+      }
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style: none;
+    font-size: $fonsize-all;
+    li {
+      font-size: $fonsize-all;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 5px;
+      ul {
+        margin: 0;
+        font-size: $fonsize-all;
+      }
+      &:before {
+        content: "";
+        left: 0;
+        top: 9px;
+        background: $white;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        border: 2px solid $red;
+        display: block;
+        position: absolute;
+        transition: .1s;
+      }
+      &:hover {
+        /*&:before {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-left: 5px solid $blue;
+          border-bottom: 5px solid transparent;
+          border-radius: 0;
+          border-right: 0;
+        }*/
+      }
+    }
+    &.social-icons {
+      li {
+        padding-left: 25px;
+        &:before {
+          //background: url('../img/sprite.png') no-repeat;
+          left: 0;
+          top: 9px;
+          border-radius: 0;
+          border: none;
+        }
+      }
+    }
+  }
+  img {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 20px 0;
+    &.left, &[style*="float: left;"], &[style*="float:left;"] {
+      width: auto;
+      height: auto;
+      float: left;
+      margin: 7px 15px 10px 0;
+      @media screen and (max-width: $screen-xs) {
+        float: none !important;
+        display: block;
+        margin: 20px 0 20px 0;
+      }
+    }
+    &.right, &[style*="float: right;"], &[style*="float:right;"] {
+      width: auto;
+      height: auto;
+      float: right;
+      margin: 7px 0 10px 15px;
+      @media screen and (max-width: $screen-xs) {
+        float: none !important;
+        display: block;
+        margin: 20px 0 20px 0;
+      }
+    }
+    &.kv-play-icon {
+      position: absolute;
+      top: 0 !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      margin: auto !important;
+    }
+  }
+  figure {
+    margin: 0 0 10px;
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+  dl {
+    margin: 0 0 10px;
+    font-size: $fonsize-all;
+    dt {
+    }
+    dd {
+      padding: 0 0 0 10px;
+      margin: 0 0 10px;
+      font-size: $fonsize-all;
+    }
+  }
+  meter {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  progress {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  details {
+    margin: 0 0 10px;
+    summary {
+      font-weight: bold;
+    }
+    p {
+      margin-left: 15px;
+    }
+  }
+  blockquote {
+    &:before, &:after {
+      font-size: 20px;
+      content: '"';
+    }
+    margin: 0 0 30px;
+  }
+  table {
+    visibility: hidden;
+    &.table {
+      visibility: visible;
+    }
+  }
+  .table-wrapper {
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 6px;
+    margin: 25px 0 20px;
+    @media screen and (max-width: $screen-xs) {
+      margin: 15px 0 15px;
+    }
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 10px;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border: 1px solid $border-color;
+      background-color: $border-color;
+    }
+    table {
+      visibility: visible;
+      width: 100%;
+      margin: 0;
+      font-size: $fonsize-all;
+      @media screen and (max-width: $screen-xs) {
+        width: 1200px;
+        font-size: 17px;
+      }
+      caption {
+        display: none;
+      }
+      thead {
+        background-color: $red;
+        tr {
+          th {
+            color: $white;
+            line-height: 28px;
+            font-weight: 600;
+            border-bottom: 0;
+            padding: 12px 15px;
+            text-transform: uppercase;
+            font-size: $fonsize-all;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            padding: 15px 15px;
+            font-weight: 500;
+            font-size: $fonsize-all;
+          }
+          &:last-of-type {
+            border-bottom: 1px solid $border-color;
+          }
+        }
+      }
+    }
+  }
+  iframe {
+    display: block;
+    // visibility: hidden;
+  }
+  .embed-responsive {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    iframe {
+      visibility: visible;
+    }
+  }
+  .show-iframe {
+    iframe {
+      visibility: visible;
+      width: 100%;
+      height: 530px;
+      @media screen and (max-width: $screen-xs) {
+        height: 257px;
+      }
+      &[src*="/slideshows/"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 530px !important;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        @media screen and (max-width: $screen-xs) {
+          height: 257px !important;
+        }
+      }
+    }
+  }
+  iframe.cke_wysiwyg_frame.cke_reset {
+    //to make standard content visible in Admin WYSIWYG editor
+    visibility: visible;
+  }
+  a {
+    &.btn {
+      margin: 0 10px 0 0;
+      @media screen and (max-width: $screen-xs) {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+    &.btn-download {
+      span, strong {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+  #h5 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    &[style*="width"] {
+      @media screen and (max-width: $screen-xs) {
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .centered-image {
+    img {
+      left: auto !important;
+      transform: none;
+    }
+  }
+}
+

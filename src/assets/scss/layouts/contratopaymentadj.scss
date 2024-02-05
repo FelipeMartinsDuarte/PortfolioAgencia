@@ -1,0 +1,63 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+
+
+//Change Section Color
+.mainsect{
+    position: relative;
+    background-color: $white;
+    height: 100vh !important;
+    //Adjust background color to fullfill on mobile
+    @media screen and (max-width: $screen-xs) {
+        height: 150vh !important;
+    }
+}
+.dtlsection{
+    background-color: $black;
+    height: 100vh !important;
+    //Adjust background color to fullfill on mobile
+    @media screen and (max-width: $screen-xs) {
+        height: 110vh !important;
+    }
+}
+
+//Remove one of the sides to be responsive on mobiles and tablets
+.removedetails{
+    @media screen and (max-width: 991px) and (min-width: 768px) {   
+        display: none !important; 
+    }
+    @media screen and (max-width: $screen-xs) {
+        display: none !important;
+    }
+}
+
+.removemain{
+    @media screen and (max-width: 991px) and (min-width: 768px) {   
+        display: none !important;
+    }
+    @media screen and (max-width: $screen-xs) {
+        display: none !important;
+    }
+}
+
+
+//Reset section background and adds background to body to not overflow when supasses the section
+#payment{
+    @media screen and (max-width: 1599px) and (min-width: 992px) {
+        background: linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%);
+        height: 150vh !important;
+    }
+}
+
+//Remove footer sections on computer
+#footdiscount{
+    @media screen and (max-width: 1599px) and (min-width: 992px) {
+        display: none !important;
+    }
+}
+#footinfo{
+    @media screen and (max-width: 1599px) and (min-width: 992px) {
+        display: none !important;
+    }
+}

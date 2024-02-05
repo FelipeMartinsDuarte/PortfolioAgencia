@@ -1,0 +1,203 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+body {
+}
+
+.backbutton {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    width: 16px;
+    height: auto;
+    cursor: pointer;
+}
+  
+#logo {
+    width: 312px;
+    height: auto;
+    padding-bottom: 16px;
+    @media screen and (max-width: $screen-xs) {
+        padding-top: 45px;;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 500px !important;
+    }
+    
+}
+
+.cite {
+    font-style: italic;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        padding-top: 16px;
+        width: 75vw;
+    }
+
+}
+
+.imgrectangle {
+    background-image: url("../../images/RECTANGLE.png");
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    background-position: right;
+
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        background-position: top right;
+    }
+    @media screen and (max-width: $screen-xs) {
+        background-position: top right;
+    }
+}
+
+.bullet {
+    margin-top: 16px;
+    margin-bottom: 16px !important;
+    @media screen and (max-width: $screen-xs) {
+        width: 16px;
+        height: auto;
+    }
+}
+
+.understand-list {
+    @media screen and (min-width: 1600px) {
+        padding-left: 32px;
+    }
+    @media screen and (max-width: 1599px) and (min-width: 992px) {
+        padding-left: 64px;
+    }
+    ul li{
+        font-weight: 500;
+        padding-bottom: 16px;
+    }
+}
+
+
+.centralize-case {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $black;
+    h4 {        
+        color: $white;
+        font-family: $times-new-roman;
+    }
+    
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.designboxes {
+    width: 333px;
+    height: 333px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    img {
+        width: 333px;
+        height: 333px;
+        border: 2px solid $black;
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        width: 666px;
+        height: 666px;
+    }
+    @media screen and (min-width: 1600px) {
+        img {
+            width: 31.56rem;
+            height: 31.56rem;
+        }
+        width: 31.56rem;
+        height: 31.56rem;
+    }
+    
+}
+
+
+.text {
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        width: 85vw;
+    }
+}
+
+.developmentrectangle {
+    width: 256px !important;
+    height: 256px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+    border-image-source: linear-gradient(-135deg, transparent 20%, rgba(237,235,57,1) 0%, rgba(237,235,57,1) 70%, rgba(255,255,255,1) 70%);
+    border-image-slice: 1;
+    margin-right: 64px;
+    @media screen and (max-width: $screen-xs) {
+        margin-top: 32px;
+    }
+    
+    @media screen and (min-width: 1600px) {
+        width: 365px !important;
+        height: 365px !important;
+    }
+        
+}
+
+#processimg{
+    @media screen and (max-width: $screen-xs) {
+        order: 2;
+    }
+}
+
+.centralizedevelopment {
+    @media screen and (max-width: $screen-xs) {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-content: center;
+    }
+}
+
+#thinkingimg{
+    padding-top: 32px;
+    order: 2;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        padding-top: 0;
+        display: none;
+        order: inherit;
+    }
+    @media screen and (max-width: $screen-xs) {
+        padding-top: 0;
+        display: none;
+        order: inherit;
+    }
+
+}
+
+#thinkingimg-responsive {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 100%;
+    height: 512px;
+    @media screen and (min-width: 992px) {
+        display: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: inherit;
+        height: inherit;
+    }
+}
+
+.centralize {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

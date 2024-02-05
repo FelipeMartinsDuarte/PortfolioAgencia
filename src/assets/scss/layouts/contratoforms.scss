@@ -1,0 +1,271 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+body {
+}
+
+#contratoforms{
+    background-color: $white !important;
+    margin-top: 0px !important;
+    color: $black;
+    img {
+        height: auto;
+        width: 64px !important;
+        @media screen and (max-width: $screen-xs) {
+            width: 50px !important;
+        }
+        
+    }
+    h1{
+        color:$black;
+        font-size: 68px !important;
+        line-height: 5rem !important;
+        margin-bottom: 32px;
+        width: 60vw !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            font-size: 90px !important;
+            width: 84vw !important;
+            line-height: 6rem !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 94vw !important;
+            font-size: 64px !important;
+            line-height: 5rem !important;
+        }
+    
+    }
+    form {
+        position: relative;
+        width: 85vw !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 84vw !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 93vw !important;
+        }
+
+    }
+
+    #errorp{
+        display: block;
+        margin-bottom: 8px;
+        color: red;
+        text-align: left;
+    }
+
+    input[type="text"]{
+        width: 45%;
+        padding: 16px;
+        border: 2px solid $primary;
+        border-radius: 4px;
+        margin-bottom:8px;
+        &::placeholder{
+            text-transform: uppercase;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+
+    input[type="radio"]{
+        margin-right: 4px!important;
+        
+    }
+    #PessoaJuridica{
+        margin-left: 16px;
+    }
+    #inputend{
+        display: flex;
+        width: 45%;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 8px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 100%;
+            padding-bottom: 16px;
+        }
+    }
+
+
+    #checkbox {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        input[type="checkbox"]{
+            width: 16px;
+            height: 16px;
+            margin-top: 5px;
+            margin-right: 8px;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            margin-top: 16px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-top: 16px;
+            input[type="checkbox"]{
+                 height: 25px;
+                 width: 25px;
+                 margin-top: 8px;
+            }
+        }
+    }
+    label[for="agree"]{
+        width: 40%;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 80%;
+        }
+        @media screen and (max-width: $screen-xs) {
+            font-size: 22px !important;
+            line-height: 2rem !important;
+            width: 100%;
+            margin-left: 8px;
+        }
+    }
+    #disabled-btn{
+        opacity: 0.5 !important;
+    }
+    #fifth{
+        width:  45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        input[type="text"]{   
+            width: 100%;
+        }
+        div {
+            width: 48% !important;
+            @media screen and (max-width: $screen-xs) {
+                width: 100% !important;
+            }
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+    label {
+        color: $black;
+        font-family: $times-new-roman;
+        margin-bottom: 8px;
+    }
+    .disabledinp{
+        display: none !important;
+    }
+    #menu{
+        margin-bottom: 64px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        a {
+            font-family: $segoe-ui;
+            color: $black;
+            font-weight: 600 !important;
+            text-decoration: none;
+        }
+        #backagain {
+            background: url("../../images/icons/BACK.png") left 3px no-repeat;
+            padding-left: 40px;
+            background-size: 16px auto;
+            cursor: pointer;
+        }
+    }
+    #adress{
+        position: relative;
+        ul {
+            box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+            background-color: $white !important;
+            z-index: 3;
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+            position: absolute;
+            bottom: -154px !important;
+            left: 0;
+            width: 45%;
+            overflow-y: scroll;
+            height: 150px;
+            li {
+                overflow: hidden;
+                width: 100%;
+                border-top: 2px solid $primary;
+                padding: 16px 12px !important;
+                margin-bottom: 4px;
+                cursor: pointer;
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+                width: 100%;
+                bottom:-262px !important ;
+                height: 264px;
+            }
+            @media screen and (max-width: $screen-xs) {
+                width: 100%;
+                bottom:-243px !important ;
+                height: 264px;
+            }    
+            @media screen and (max-width: 1599px) and (min-width: 992px) {
+                li {
+                    border-top: 2px solid $black;
+                }
+            }
+        }
+    }
+
+    .empty{
+        display: none !important;
+    }
+
+    .next-btn{
+        outline: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        text-decoration: none;
+        background-color: $black;
+        font-weight: 400 !important;
+        padding:16px 64px;
+        color: $white;
+        text-align: center;
+        border-radius: 4px;
+        font-family: $segoe-ui !important;        
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 100% !important;
+            position: relative;
+            right: inherit;
+            bottom: inherit;
+            z-index: inherit;
+            margin-top: 16px;
+            display: inline-block;
+            text-align: center;
+            padding:20px 32px !important;
+            font-size: 18px !important;
+            margin-bottom: 128px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-top: 32px;
+            width: 100% !important;
+            position: relative;
+            right: inherit;
+            bottom: inherit;
+            font-weight: 600 !important;
+            z-index: inherit;
+            display: inline-block;
+            margin-bottom: 64px;
+        }
+
+    }
+}

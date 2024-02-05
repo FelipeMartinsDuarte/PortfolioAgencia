@@ -1,0 +1,200 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+
+
+#contratoend{
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    #logo{
+        margin-top: 32px;
+        width: 64px !important;
+        height: auto !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {   
+            margin-top: 64px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-top: 16px;
+        }
+    }
+    h1{
+        text-align: center;
+        margin-top: 32px;
+        font-size: 80px !important;
+        line-height: 6rem !important;
+        color: $black;
+        br{
+            display: inherit !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            line-height: 3.5rem !important;
+            margin-top: 16px;
+            font-size: 48px !important;
+        }
+    }
+    #sent{
+        width: 178px !important;
+        height: auto !important; 
+        @media screen and (max-width: $screen-xs) {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+    }
+    #tryagain{
+        font-family: $segoe-ui;
+        font-weight: 700 !important;
+        background-color: $black !important;
+        color: $white;
+        padding: 16px 64px;
+        border-radius: 4px;
+        margin-top: 16px;
+        margin-bottom: 256px !important;
+        cursor: pointer;
+    }
+    .description{
+        word-wrap: break-word;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        width: 50%;
+        text-align: center;
+        font-size: 22px !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {   
+            width: 80%;
+            margin-top: 32px;;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 100%;
+            margin-bottom: 32px;
+            line-height: 2rem !important;
+        }
+    }
+    #downarrow{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {   
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-bottom: 32px;
+        }
+    }
+    #itemlist{
+        margin-left: 50px;
+        width: 60%;
+        margin-bottom: 128px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media screen and (max-width: 991px) and (min-width: 768px) {   
+            width: 90%;
+            margin-left: 40px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 100%;
+            margin-left: 0;
+        }
+        h2{
+            width: 100%;
+            font-family: $segoe-ui;
+            font-weight: 700 !important;
+            font-size: 25px !important;
+
+        }
+        h4{
+            font-size: 18px !important;
+            color: $black !important;
+            font-family: $segoe-ui;
+            font-weight: 700 !important;
+        }
+        .itemli{
+            margin-bottom: 16px;
+            width: 48%;
+            @media screen and (max-width: 991px) and (min-width: 768px) { 
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: $screen-xs) {
+                width: 100%;
+            }
+            p{
+                font-size: 18px !important;
+                font-family: $segoe-ui;
+            }
+            ul{
+                list-style: circle !important;
+                padding-left: 0 !important;
+                li{
+                    list-style: circle !important;
+                    margin-bottom: 4px;
+                    margin-left: 8px;
+                }
+            }
+        }
+        #contratodiv{
+            width: 100%;
+        }
+    }
+    .contract-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 1px solid $black;
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+        span {
+            color: $black;
+        }
+        a {
+            width: 128px;
+            display: block;
+            background-color: $black;
+            color: $white;
+            border-radius: 16px;
+            font-family: $segoe-ui;
+            text-decoration: none;
+            padding: 4px;
+            cursor: pointer;
+            margin-bottom: 16px;
+
+        }
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 10px 16px 0px;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            img{
+                margin-top: 2px;
+                width: 18px !important;
+                height: 14px !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .unexpand{
+        img[name="download"] {
+            display: none !important;
+        }
+        a {
+            display: none !important;
+        }
+        div {
+            margin-bottom: 8px;
+        }
+        img[name="expand"]{
+            transform: rotate(180deg);
+        }
+        flex-direction: row !important;
+        border-radius: 8px 8px 0px 0px !important;
+    }
+}

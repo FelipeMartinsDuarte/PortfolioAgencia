@@ -1,0 +1,198 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+body {
+}
+
+#contratoinit{
+    margin-top: 0px !important;
+    background-color:$black;
+    height: 100vh;
+    color: $white;
+    background-image: url("../../images/banner-bg-dk-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img {
+        height: auto;
+        width: 64px !important;
+        @media screen and (max-width: $screen-xs) {
+            width: 50px !important;
+        }
+    }
+    p {
+        color: $white;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        padding-bottom: 32px !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            font-size: 22px !important;
+            width: 84vw !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 93vw !important;
+            padding-top:16px !important;
+        }
+
+
+            
+        
+    }
+    h1{
+        color:$white;
+        font-size: 68px !important;
+        line-height: 5rem !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            font-size: 90px !important;
+            width: 84vw !important;
+            line-height: 6rem !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            font-size: 64px !important;
+            width: 94vw !important;
+            line-height: 4rem !important;
+        }
+    
+    }
+    #menu{
+        margin-bottom: 64px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        a {
+            font-family: $segoe-ui;
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .next-btn{
+        border:2px solid $primary;
+        text-decoration: none;
+        font-weight: 600 !important;
+        padding:16px 64px;
+        color: $primary;
+        text-align: center;
+        border-radius: 8px;
+        font-family: $segoe-ui !important;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 84vw !important;
+            display: inline-block;
+            text-align: center;
+            padding:20px 32px !important;
+            border-radius: 4px;
+            font-size: 18px !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 93vw !important;
+            display: block;
+            margin-bottom: 64px;
+        }
+    }
+    #contract-btn {
+        border: 2px solid $white !important;
+        margin-bottom: 32px;
+        text-align: left;
+        padding: 16px 32px;
+        color: $white;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        @media screen and (max-width: 1599px) and (min-width: 992px) {
+            display: none;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-bottom: 32px;
+            border-radius: 0px !important;
+            padding: 13px 16px;
+        }
+    }
+    .contrato {
+        position: absolute;
+        z-index: 2;
+        color: $black !important;
+        background-color: $white !important;
+        box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+        height: 700px;
+        overflow: hidden;
+        overflow-y: scroll;
+        width: 40%;
+        padding: 64px;
+        margin-left: 32px;
+        span.bold {
+            color: inherit;
+            font-size: inherit;
+            font-weight: 700 !important;
+            font-family: Arial, Helvetica, sans-serif!important;
+        }
+        span.italy{
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif !important;
+            text-align: justify;
+            
+        }
+        .center{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-weight: 700 !important;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            display: none;
+        }
+        @media screen and (max-width: $screen-xs) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $screen-xs) {
+        height: inherit;
+    }
+
+}
+
+
+#why{
+    background: url('../../images/contrato/background-init.png') center center no-repeat ;
+    height: 100vh;
+    ul li {
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        &::before{
+            position: absolute;
+            content:"";
+            background-color: $black;
+            border-radius: 100%;
+            height: 16px;
+            width: 16px;
+            left: 9%;
+            margin-top:5px;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px){
+            font-size: 22px;
+            margin-left: 8px;
+            &::before{
+                margin-top:8px;
+                left: 7%;
+            }
+        }
+        @media screen and (max-width: $screen-xs) {
+            &::before{
+                left: 4%;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px){
+        background-position: top left;
+        h2 {
+            font-size: 48px !important;
+        }
+    }
+    @media screen and (max-width: $screen-xs) {
+        background-position: 0px 0px;
+        background-size: 1028px;
+    }
+
+}

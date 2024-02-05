@@ -1,0 +1,462 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+body {
+}
+#payment{   
+    #payment-rg{
+        padding: 0px 64px;
+        position: fixed;
+        right: 0;
+        h2,h3,h4,h5,span,p{
+            font-family: $segoe-ui !important;
+            color: $white;
+        }
+        #backbutton{
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 32px !important;
+            @media screen and (max-width: 1599px) and (min-width: 992px) {
+                display: none;
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px){
+                margin-bottom: 64px;
+            }
+        }
+        h2 {
+            font-size: 22px !important;
+            font-weight: 700 !important;
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+                margin-bottom: 64px !important;
+            }
+            @media screen and (max-width: $screen-xs) {
+                margin-bottom: 32px !important;
+            }
+        }
+        #errorp{
+            color: red !important;
+            text-align: left !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .disabled{
+            opacity: 0.5 !important;
+            cursor: not-allowed;
+        }
+        .priceitem{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+            p {
+                width: 100% !important;
+                font-size: 16px !important;
+            }
+            h4 {
+                font-weight: 700 !important;
+                font-size: 17px !important;
+            }
+            span {
+                font-size: 16px !important;
+                font-weight: 100 !important;
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px){
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: $screen-xs) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .credinst {
+            display: flex;
+            margin-top: 22px;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            h4 {
+                margin-top: 8px;
+                font-size: 17px !important;
+                font-weight: 700 !important;
+            }
+            select {
+                border: 1px solid $white;
+                border-radius: 4px;
+                padding: 8px;
+                width: 180px;
+                outline: none;
+                color: $white;
+                background-color: $black;
+                margin-bottom: 22px !important;
+                @media screen and (max-width: 991px) and (min-width: 768px){
+                    width: 256px;
+                }
+                @media screen and (max-width: $screen-xs) {
+                    width: 100%;
+                    margin-top: 8px;
+                }
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px){
+                margin-top: 40px;
+            }
+            @media screen and (max-width: $screen-xs) {
+                flex-wrap: wrap;
+                margin-top: 16px;
+            }
+        }
+
+        hr{
+            border-top: 2px solid $white !important;
+            color: $white !important;
+            margin-top: 16px !important;
+            @media screen and (max-width: 991px) and (min-width: 768px){
+                margin-top: 32px !important;
+            }
+        }
+
+        .credtotal{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            p {
+                text-align: right;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -16px;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                @media screen and (max-width: 991px) and (min-width: 768px){
+                    bottom:-6px;
+                }
+                @media screen and (max-width: $screen-xs) {
+                    bottom: -5px;
+                }
+            }
+            h2{
+                @media screen and (max-width: 991px) and (min-width: 768px){
+                    margin-bottom: 36px !important;
+                }
+            }
+        }
+
+        //btn for computer screen
+        #contract-btn{
+            text-decoration: none;
+            font-weight: 700 !important;
+            font-family: $segoe-ui;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background-color: $golden;
+            color: $black;
+            text-transform: uppercase;
+            padding: 22px 8px;
+            font-size: 22px !important;
+            margin-top: 22px;            
+        }
+
+        //btn for small devices
+        .contract-btn{
+            text-decoration: none;
+            font-weight: 700 !important;
+            font-family: $segoe-ui;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background-color: $white;
+            color: $black;
+            border-radius: 32px;
+            text-transform: uppercase;
+            padding: 22px 8px;
+            font-size: 22px !important;
+            margin-top: 22px;  
+        }
+
+        input[type="text"].inputtxt {
+            width: 100% !important;
+            outline: none !important;
+            border: 1px solid $white !important;
+            background-color: $black !important;
+            color: $white !important;
+            padding: 8px 16px !important;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            @media screen and (max-width: 991px) and (min-width: 768px) {  
+                margin-bottom: 32px !important;
+            }
+        }
+        
+        .creditcard{
+            h4 {
+                font-weight: 700 !important;
+                margin-bottom: 32px;
+            }
+            label {
+                margin-bottom: 8px;
+                color: $white;
+                font-size: 17px !important;
+                font-family: $segoe-ui;
+                font-weight: 600 !important;
+            }
+            .split-txt {
+                width:  100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: space-between;
+                div {
+                    width: 48% !important;
+                }
+                input[type="text"]{
+                    width: 100% !important;
+                }
+            }
+            input[name="email"]{
+                padding-left: 54px !important;
+                background: url("../../images/icons/payment/email.png") no-repeat;
+                background-position: 16px 13px;
+                background-size: 22px;
+            }
+            input[name="credname"]{
+                text-transform: uppercase;
+            }
+            input[name="crednumb"]{
+                padding-left: 54px !important;
+                background: url("../../images/icons/payment/mastercard.png") no-repeat;
+                background-position: 16px 12px;
+                background-size: 25px;
+            }
+            input[name="credcvv"]{
+                padding-left: 54px !important;
+                background: url("../../images/icons/payment/cvv.png") no-repeat;
+                background-position: 14px 12px;
+                background-size: 25px;
+            }
+
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) { 
+            position: relative;
+            right: inherit;
+            padding: inherit;
+            width: 97vw !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            width: 95vw !important;
+            position: relative;
+            right: inherit;
+            padding: inherit;
+            padding-left: 16px;
+            background-color: $black;
+        }
+    }
+    #payment-lf{
+        #logo{
+            height: auto;
+            width: 48px !important;
+            @media screen and (max-width: $screen-xs) {
+                padding-top: 128px;
+            }
+        }
+        h1 {
+            margin-top: 32px;
+            color: $black;
+            font-size: 68px !important;
+            line-height: 5rem !important;
+            @media screen and (max-width: 991px) and (min-width: 768px) { 
+                margin-bottom: 8px;
+            }
+            @media screen and (max-width: $screen-xs) {
+                margin-top: 16px;
+            }
+        }
+        p {
+            font-size: 16px !important;
+            font-family: $segoe-ui;
+            width: 85%;
+            @media screen and (max-width: $screen-xs) {
+                width: 100%;
+                margin-bottom: 32px;
+            }
+        }
+        .contract-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 1px solid $black;
+            width: 85%;
+            text-align: center;
+            border-radius: 8px;
+            span {
+                color: $black;
+            }
+            a {
+                width: 128px;
+                display: block;
+                background-color: $black;
+                color: $white;
+                border-radius: 16px;
+                font-family: $segoe-ui;
+                text-decoration: none;
+                padding: 4px;
+                cursor: pointer;
+                margin-bottom: 16px;
+
+            }
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding: 10px 16px 0px;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                img{
+                    margin-top: 2px;
+                    width: 18px !important;
+                    height: 14px !important;
+                    cursor: pointer;
+                }
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+                width: 100%;
+            }
+            @media screen and (max-width: $screen-xs) {
+                width: 100%;
+            }
+        }
+        .unexpand{
+            img[name="download"] {
+                display: none !important;
+            }
+            a {
+                display: none !important;
+            }
+            div {
+                margin-bottom: 8px;
+            }
+            img[name="expand"]{
+                transform: rotate(180deg);
+            }
+            flex-direction: row !important;
+            border-radius: 8px 8px 0px 0px !important;
+        }
+        a.change{
+            position: absolute;
+            right: 16px;
+            font-family: $segoe-ui;
+            font-size: 18px;
+            text-decoration: underline;
+            color: $black;
+            font-weight: 700 !important;
+        }
+        input[type="radio"] {
+            border: 0px !important;
+            width: 20px !important;
+            color: $black;
+            height: 20px !important;
+            margin-right: 16px;
+        }
+        .paymentmet{
+            position: relative;
+            margin-bottom: 16px;
+            width: 85%;
+            padding: 16px !important;
+            border: 1px solid $black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            h5 {
+                margin-top: 9px;
+                font-size: 18px !important;
+                font-weight: 700 !important;
+                color: $black !important;
+            }
+
+            img {
+                height: 20px;
+                width:auto;
+                margin-right: 8px;
+
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+                width: 100%;
+            }
+            @media screen and (max-width: $screen-xs) {
+                width: 100%;
+            }
+        }
+        h4 {
+            color: $black;
+            font-weight: 700 !important;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-size: 22px !important;
+        }
+        #footdiscount{
+            position: fixed;
+            width: 100%;
+            background-color: $golden;
+            padding: 16px 7%;
+            left: 0;
+            bottom: 125px;
+            p {
+                color: $black;
+                margin-bottom: 0;
+            }
+            @media screen and (max-width: $screen-xs) {
+                padding: 8px 16px;
+                bottom: inherit;
+                top: 70px;
+            }
+        }
+        #footinfo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: $black;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            padding: 22px 7%;
+            left: 0;
+            h2,p{
+                color: $white;
+                font-family: $segoe-ui !important;
+                margin-bottom: 36px !important;
+                @media screen and (max-width: $screen-xs) {
+                    font-size: 16px !important;
+                    margin-bottom: 16px !important;
+                }
+            }
+            p {
+                text-align: right;
+                width: 100%;
+                position: absolute;
+                right: 7%;
+                bottom: -12px;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                @media screen and (max-width: $screen-xs) {
+                    font-size: 13px !important;
+                    bottom: -2px;
+                    right: 16px;
+                }
+            }
+            @media screen and (max-width: $screen-xs) {
+                padding: 8px 16px;
+                bottom: inherit;
+                top: 0;
+            }
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) { 
+            width: 97vw !important;
+        }
+    }
+}

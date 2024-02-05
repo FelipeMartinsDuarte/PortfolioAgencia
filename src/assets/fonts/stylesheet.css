@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Vogue';
+    src: url('Vogue-Regular.eot');
+    src: url('Vogue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Vogue-Regular.woff2') format('woff2'),
+        url('Vogue-Regular.woff') format('woff'),
+        url('Vogue-Regular.ttf') format('truetype'),
+        url('Vogue-Regular.svg#Vogue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vogue';
+    src: url('Vogue-Regular_1.eot');
+    src: url('Vogue-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Vogue-Regular_1.woff2') format('woff2'),
+        url('Vogue-Regular_1.woff') format('woff'),
+        url('Vogue-Regular_1.ttf') format('truetype'),
+        url('Vogue-Regular_1.svg#Vogue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vogue';
+    src: url('Vogue-Regular_2.eot');
+    src: url('Vogue-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('Vogue-Regular_2.woff2') format('woff2'),
+        url('Vogue-Regular_2.woff') format('woff'),
+        url('Vogue-Regular_2.ttf') format('truetype'),
+        url('Vogue-Regular_2.svg#Vogue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.eot');
+    src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI.woff2') format('woff2'),
+        url('SegoeUI.woff') format('woff'),
+        url('SegoeUI.ttf') format('truetype'),
+        url('SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('TimesNewRomanPSMT.eot');
+    src: url('TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+        url('TimesNewRomanPSMT.woff2') format('woff2'),
+        url('TimesNewRomanPSMT.woff') format('woff'),
+        url('TimesNewRomanPSMT.ttf') format('truetype'),
+        url('TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman Cyr';
+    src: url('TimesNRCyrMT.eot');
+    src: url('TimesNRCyrMT.eot?#iefix') format('embedded-opentype'),
+        url('TimesNRCyrMT.woff2') format('woff2'),
+        url('TimesNRCyrMT.woff') format('woff'),
+        url('TimesNRCyrMT.ttf') format('truetype'),
+        url('TimesNRCyrMT.svg#TimesNRCyrMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman Cyr';
+    src: url('TimesNRCyrMT-Bold.eot');
+    src: url('TimesNRCyrMT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TimesNRCyrMT-Bold.woff2') format('woff2'),
+        url('TimesNRCyrMT-Bold.woff') format('woff'),
+        url('TimesNRCyrMT-Bold.ttf') format('truetype'),
+        url('TimesNRCyrMT-Bold.svg#TimesNRCyrMT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,259 @@
+@import "../mixins";
+@import "../standard-content";
+@import "../../fonts/stylesheet.css";
+body {
+}
+
+#contato {
+background-image: url("../../images/contato/contato-banner-computer.png");
+background-repeat: no-repeat;
+background-size: 45%;
+background-position: right;
+margin-bottom: 256px;
+    h1 {
+        color: $black;
+        margin-bottom: 32px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 100vw !important;
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            font-size: 16vmin !important;
+            br {
+                display: inherit !important;
+            }
+        }
+    }
+
+    .centered-sent {
+        margin-top: 64px;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        @media screen and (max-width: 1499px) and (min-width: 992px) {
+            img {
+                width: 180px !important;
+                height: auto;
+            }
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 88vw !important;
+            margin-bottom: 64px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            img {
+                width: 128px;
+                height: auto;
+            }
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+
+    select{
+        font-size: 22px;
+        width: 256px;
+        outline: 0;
+        border: 0;
+        color: $black;
+        background-color: white;
+        border-bottom: 2px solid $black;
+        font-family: $times-new-roman;
+        margin-bottom: 16px;
+        margin-right: 8px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            font-size: 28px !important;
+            width: 320px;
+            margin-right: 16px;
+            margin-bottom: 45px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            font-size: 25px !important;
+            width: 90vw;
+            border-radius: 0;
+            margin-top: 18px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .select2 {
+        margin-left: 8px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            margin-left: 16px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-left: 0px !important;
+        }
+        
+    }
+
+    input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+        border-radius: 0px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 24px;
+            height: 24px;
+       }
+    }
+
+    input[type="text"]{
+        font-size: 22px;
+        font-family: $times-new-roman;
+        font-style: italic;
+        width: 256px;
+        outline: 0;
+        border: 0;
+        border-bottom: 2px solid $black;
+        &::placeholder {
+            font-family: $times-new-roman;
+            font-size: 22px !important;
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+                font-size: 28px !important;
+            }
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            font-size: 28px !important;
+            width: 320px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            border-radius: 0;
+            font-size: 25px !important;
+            width: 90vw;
+            &::placeholder {
+                color: $black;
+            }
+        }
+    }
+
+    label{
+        color: $black !important;
+        font-size: 18px !important;
+        margin-left: 4px;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            font-size: 20px !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+            font-size: 15px !important;
+            word-wrap: break-word;
+        }
+    }
+
+    #referee{
+        width: 128px;
+        font-size: 18px;
+        &::placeholder {
+            font-family: $times-new-roman;
+            font-size: 18px !important;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 200px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-left: 22px;
+            font-size: 16px !important;
+        }
+    }
+
+    form {
+        p {
+            display: inline;
+            word-wrap: break-word;
+            font-family: $times-new-roman;
+            font-weight: 700;
+
+        }
+        input {
+            margin: 0 4px;
+            margin-bottom: 16px;
+            display: inline;
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            width: 87vw !important;
+            p {
+                font-size: 28px !important;
+            }
+            input {
+                margin-bottom: 45px;
+            }
+        }
+        @media screen and (max-width: $screen-xs) {
+            p {
+                font-size: 25px !important;
+            }
+            p + br {
+                display: none;
+                 margin-left: 8px;
+            }
+            .searchingcontact {
+                margin-left: 8px;
+            }
+            input {
+                margin-top: 18px;
+                margin-bottom: 32px;
+            }
+            .contactmecontact {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .accept {
+        margin-top: 32px;
+        opacity: 0.5;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            margin-top: 64px;
+        }
+    }
+
+    .btn-style-contact {
+        margin-top: 32px;
+        color: $black;
+        padding:8px 80px;
+        background-color: $primary;
+        border: 0;
+        font-size: 22px;
+        font-family: $times-new-roman;
+        font-weight: 700;
+        
+        &:hover, :active, :focus {
+            font-size: 24px;
+            padding: 10px 82px;
+        }
+
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            padding: 16px 128px;
+            font-size: 28px;
+            margin-top: 64px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+            width:90vw;
+        }
+    }
+
+    .disabledcontact {
+        opacity: 0.5;
+        &:hover, :active, :focus {
+            font-size: 22px;
+            padding: 8px 80px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        background-image: none;
+    }
+
+    
+}
+
+#contact-image {
+    margin-top: 64px;
+    width: 100vw !important;
+    height: auto;
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+}
